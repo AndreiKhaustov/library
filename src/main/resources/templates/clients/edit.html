@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>edit client</title>
+</head>
+<body>
+<form th:method="PATCH" th:object="${client}" th:action="@{/clients/{id}/edit(id=${client.getId()})}">
+  <label for="name">enter client's name</label>
+  <input type="text" th:field="*{name}" id="name"/>
+  <div style="color:red" th:if="${#fields.hasErrors('name')}" th:errors="*{name}">error</div>
+  <label for="age">Enter client's age</label>
+  <input type="text" th:field="*{age}" id="age"/>
+  <div style="color:red" th:if="${#fields.hasErrors('age')}" th:errors="*{age}">error</div>
+  <input type="submit" value="Update client"/>
+</form>
+</body>
+</html>

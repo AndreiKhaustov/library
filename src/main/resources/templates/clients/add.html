@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>New client</title>
+</head>
+
+<body>
+<h3>New client</h3>
+<form th:method="POST" th:object="${client}" th:action="@{/clients/add}">
+  <label for="name">Enter client's name</label>
+  <input type="text" th:field="*{name}" id="name"/>
+  <div style="color:red" th:if="${#fields.hasErrors('name')}" th:errors="*{name}">error</div>
+  <label for="age">Enter client's age</label>
+  <input type="text" th:field="*{age}" id="age"/>
+  <div style="color:red" th:if="${#fields.hasErrors('age')}" th:errors="*{age}">error</div>
+  <input type="submit" value="Save person"/>
+</form>
+</body>
+</html>

@@ -1,0 +1,43 @@
+2023-02-03T16:28:25.462+04:00  INFO 30582 --- [main] by.andrei.library.LibraryApplication     : Starting LibraryApplication using Java 18.0.1.1 with PID 30582 (/Users/andreikhaustov/IdeaProjects/library/target/classes started by andreikhaustov in /Users/andreikhaustov/IdeaProjects/library)
+2023-02-03T16:28:25.466+04:00  INFO 30582 --- [main] by.andrei.library.LibraryApplication     : No active profile set, falling back to 1 default profile: "default"
+2023-02-03T16:28:26.052+04:00  INFO 30582 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-03T16:28:26.106+04:00  INFO 30582 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 45 ms. Found 2 JPA repository interfaces.
+2023-02-03T16:28:26.546+04:00  INFO 30582 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-02-03T16:28:26.555+04:00  INFO 30582 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-02-03T16:28:26.555+04:00  INFO 30582 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-02-03T16:28:26.623+04:00  INFO 30582 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-02-03T16:28:26.623+04:00  INFO 30582 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1113 ms
+2023-02-03T16:28:26.750+04:00  INFO 30582 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-02-03T16:28:27.008+04:00  INFO 30582 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2bc7db89
+2023-02-03T16:28:27.010+04:00  INFO 30582 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-02-03T16:28:27.084+04:00  INFO 30582 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-02-03T16:28:27.175+04:00  INFO 30582 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.6.Final
+2023-02-03T16:28:27.387+04:00  WARN 30582 --- [main] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-02-03T16:28:27.548+04:00  INFO 30582 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-02-03T16:28:28.367+04:00  INFO 30582 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-02-03T16:28:28.377+04:00  INFO 30582 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-03T16:28:28.736+04:00  WARN 30582 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-03T16:28:29.090+04:00  INFO 30582 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-02-03T16:28:29.099+04:00  INFO 30582 --- [main] by.andrei.library.LibraryApplication     : Started LibraryApplication in 4.091 seconds (process running for 4.824)
+2023-02-03T16:28:31.718+04:00  INFO 30582 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-03T16:28:31.718+04:00  INFO 30582 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-02-03T16:28:31.720+04:00  INFO 30582 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-02-03T16:28:31.996+04:00  INFO 30582 --- [http-nio-8080-exec-1] b.a.l.controllers.ClientController       : load from DB all clients
+2023-02-03T17:24:02.473+04:00  INFO 30893 --- [main] b.a.library.LibraryApplicationTests      : Starting LibraryApplicationTests using Java 18.0.1.1 with PID 30893 (started by andreikhaustov in /Users/andreikhaustov/IdeaProjects/library)
+2023-02-03T17:24:02.476+04:00  INFO 30893 --- [main] b.a.library.LibraryApplicationTests      : No active profile set, falling back to 1 default profile: "default"
+2023-02-03T17:24:03.393+04:00  INFO 30893 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-03T17:24:03.474+04:00  INFO 30893 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 68 ms. Found 2 JPA repository interfaces.
+2023-02-03T17:24:04.053+04:00  INFO 30893 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-02-03T17:24:04.352+04:00  INFO 30893 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6ca30b8a
+2023-02-03T17:24:04.354+04:00  INFO 30893 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-02-03T17:24:04.412+04:00  INFO 30893 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-02-03T17:24:04.505+04:00  INFO 30893 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.6.Final
+2023-02-03T17:24:04.713+04:00  WARN 30893 --- [main] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-02-03T17:24:04.977+04:00  INFO 30893 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-02-03T17:24:06.049+04:00  INFO 30893 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-02-03T17:24:06.061+04:00  INFO 30893 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-03T17:24:06.687+04:00  WARN 30893 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-03T17:24:07.459+04:00  INFO 30893 --- [main] b.a.library.LibraryApplicationTests      : Started LibraryApplicationTests in 5.397 seconds (process running for 6.852)
+2023-02-03T17:24:08.419+04:00  INFO 30893 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-03T17:24:08.424+04:00  INFO 30893 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-02-03T17:24:08.434+04:00  INFO 30893 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
