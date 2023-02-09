@@ -4,11 +4,13 @@ import by.andrei.library.models.Client;
 import by.andrei.library.repositories.ClientRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.Optional;
 
 @Service
+@Transactional
 public class ClientService {
     private ClientRepository clientRepository;
 
@@ -26,8 +28,16 @@ public class ClientService {
         clientRepository.save(client);
     }
 
-    public void deleteClient(int id) {
-        clientRepository.deleteById(id);
+    public Optional<Client> findById(Integer id) {
+        return clientRepository.findById(id);
+    }
+
+    public boolean deleteClient(Integer id) {
+        if(clientRepository.findById(id).isPresent()) {
+            clientRepository.deleteById(id);
+            return true;
+        }
+        return false;
     }
 
     public List<Client> getClients() {
@@ -35,8 +45,6 @@ public class ClientService {
     }
 
     public Client getClientById(int id) {
-        Client client = clientRepository.findById(id);
-        client.getBooks().forEach(t -> System.out.println(t.getTitle()));
         return clientRepository.findById(id);
     }
 

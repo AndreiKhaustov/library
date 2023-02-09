@@ -1,5 +1,6 @@
 package by.andrei.library.models;
 
+import by.andrei.library.database.BaseEntity;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.Min;
@@ -22,11 +23,11 @@ import java.util.List;
         attributeNodes = {
         @NamedAttributeNode("books")
         })
-public class Client {
+public class Client implements BaseEntity<Integer> {
     @Id
     @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private Integer id;
 
     @Column(name = "name")
     @NotEmpty(message = "this field should be filled")

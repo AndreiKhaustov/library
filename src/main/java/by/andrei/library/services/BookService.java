@@ -55,7 +55,7 @@ public class BookService {
 
     public void assignBook(int id, Client client) {
         Book book = bookRepository.findById(id).get();
-        Client client1 = clientRepository.findById(client.getId());
+        Client client1 = clientRepository.findById(client.getId()).get();
         book.setMainClient(client1);
         bookRepository.save(book);
         client1.getBooks().add(book);

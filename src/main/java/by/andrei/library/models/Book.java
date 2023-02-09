@@ -1,5 +1,6 @@
 package by.andrei.library.models;
 
+import by.andrei.library.database.BaseEntity;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.Min;
@@ -12,11 +13,11 @@ import lombok.NoArgsConstructor;
 @Table(name = "book")
 @Data
 @NoArgsConstructor
-public class Book {
+public class Book implements BaseEntity<Integer> {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
-    private int id;
+    private Integer id;
     @Column(name = "title")
     @NotEmpty(message = "this field should be filled")
     private String title;
